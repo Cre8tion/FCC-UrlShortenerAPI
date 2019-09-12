@@ -89,7 +89,7 @@ function invalidURL(res){
 }
 
 function recordURL(input,res){
-	URLCount.find({},function(err, result){
+	URLCount.find({}).then(function(err, result){
 		if(err){
 			console.log(err)
 		}
